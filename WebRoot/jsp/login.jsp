@@ -23,13 +23,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form>
-		<input name="name" placeholder="What is your name?" class="name" required />
-		<input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
-        <input name="submit" class="btn" type="submit" value="Send" />
-	</form>
-	<div style="text-align:center;clear:both">
+    <div id="user">
+    	<center>
+		<input id="userid" name="userid" placeholder="请输入用户名" class="name"/>
+		<input id="userpass" name="userpass" placeholder="请输入密码" class="name" type="password"/>      
+        <input id="reg" name="submit" class="btn" type="button" value="注册" onclick="reg()"/>
+        <input id="login" name="submit" class="btn" type="button" value="登录" onclick="login()"/>
+        <span style="color:red;" align="center">${requestScope.msg}</span>        
+        </center>>
 	</div>
-	  <script src='js/jquery.js'></script>
+	
+	  <script src='js/jquery-1.7.1.js'></script>
+	  <script src='js/user/user.js'></script>
   </body>
 </html>
+

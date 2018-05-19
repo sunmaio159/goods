@@ -14,4 +14,13 @@ public class UserServiceImp implements UserService {
 	public User login(User user) {		
 		return userMapper.login(user); 
 	}
+	public int insert(User user) {		
+		return userMapper.insert(user);
+	}
+	public User SelectById(String id) {		
+		return userMapper.SelectById(id);
+	}
+	public int update(User user) {
+		return userMapper.update(user);
+	}
 }

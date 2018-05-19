@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 body {
-	  background:#2d3b36 url(image/Blurry-city-lights1337.jpg)no-repeat center center fixed;
+	  background:#2d3b36 url(../image/Blurry-city-lights1337.jpg)no-repeat center center fixed;
   	-webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -8,12 +8,13 @@ body {
     padding-top:20px;
 }
 
-form {
+div {
     margin-left:auto;
     margin-right:auto;
-    width: 343px;
-    height: 333px;
-    padding:30px;
+    margin-top:100px;
+    width: 300px;
+    height: 200px;
+    padding:50px;
     border: 1px solid rgba(0,0,0,.2);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -128,6 +129,7 @@ input:focus, textarea:focus {
     background: -o-linear-gradient(top, #6da5a3, #416b68);
     background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
     padding: 10.5px 21px;
+    margin-right:12px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
