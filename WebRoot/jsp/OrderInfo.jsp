@@ -33,12 +33,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
 	<center>
-		<input type="hidden" id="cutomerid" value="${order["cutomerid"]}"/>
+		<input type="hidden" id="cutomerid" value="${order.cutomerid}"/>
 		<div style="width:500px; height:70px">
-				订单编号：<input type="text" id="orderid" name="orderid" value="${order["orderid"]}" readonly="readonly"/>
-				订单日期：<input type="text" id="timedate" name="timedate" value="${order["timedate"]}" readonly="readonly"/></br>
+				订单编号：<input type="text" id="orderid" name="orderid" value="${order.orderid}" readonly="readonly"/>
+				订单日期：<input type="text" id="timedate" name="timedate" value="${order.timedate}" readonly="readonly"/></br>
 				<span>
-					客户名称：<input style="width:391px" type="text" id="cutomermc" name="cutomermc" value="${order["cutomermc"]}" readonly="readonly"/>
+					客户名称：<input style="width:391px" type="text" id="cutomermc" name="cutomermc" value="${order.cutomermc}" readonly="readonly"/>
 				</span></br>
 				联系地址：<input type="text" id="address" name="lxfs" value="" readonly="readonly"/>
 				联系方式：<input type="text" id="lxfs" name="lxfs" value="" readonly="readonly"/>

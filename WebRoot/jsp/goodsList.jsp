@@ -27,7 +27,7 @@ Goods goods = new Goods();
   </head>
   <script>
   var user = parent.a;
-  </script
+  </script>
 <body>
 	<center>	
 	<form id="goods">		
@@ -43,7 +43,7 @@ Goods goods = new Goods();
 			<c:forEach items="${list}" var="list" varStatus="i">
     			<tr id="tr${i.index+1}">
     				<td>
-    					<input type="checkbox" id="goods${list["goodsid"]}" name="goodslist[${i.index}].goodsid" value="${list["goodsid"]}" />
+    					<input type="checkbox" id="goods${list.goodsid}" name="goodslist[${i.index}].goodsid" value="${list.goodsid}" />
     				</td>
 	    			
 	    			<td>
@@ -51,23 +51,23 @@ Goods goods = new Goods();
 	    			</td>
 	    			
 	    			<td>
-	    				<input id="goodsname${list["goodsid"]}" name="goodslist[${i.index}].goodsname" type="text" style="display:none" value="${list["goodsname"]}"/>
-	    				<span id="span_goodsname${list["goodsid"]}">${list["goodsname"]}</span>
+	    				<input id="goodsname${list.goodsid}" name="goodslist[${i.index}].goodsname" type="text" style="display:none" value="${list.goodsname}"/>
+	    				<span id="span_goodsname${list.goodsid}">${list["goodsname"]}</span>
 	    			</td>
 	    			
 	    			<td>	    				
-	    			<input id="type${list["goodsid"]}" name="goodslist[${i.index}].type" type="text" style="display:none" value="${list["type"]}"/>	    			
-	    			<span id="span_type${list["goodsid"]}">${list["type"]}<span>	    			
+	    			<input id="type${list.goodsid}" name="goodslist[${i.index}].type" type="text" style="display:none" value="${list.type}"/>	    			
+	    			<span id="span_type${list.goodsid}">${list["type"]}<span>	    			
 	    			</td>
 	    			
 	    			<td>
-	    				<input id="xinghao${list["goodsid"]}" name="goodslist[${i.index}].xinghao" type="text" style="display:none" value="${list["xinghao"]}"/>
-	    				<span id="span_xinghao${list["goodsid"]}">${list["xinghao"]}<span>
+	    				<input id="xinghao${list.goodsid}" name="goodslist[${i.index}].xinghao" type="text" style="display:none" value="${list.xinghao}"/>
+	    				<span id="span_xinghao${list.goodsid}">${list["xinghao"]}<span>
 	    			</td>
 
 	    			<td>
-	    				<input id="danjia${list["goodsid"]}" name="goodslist[${i.index}].danjia" type="text" style="display:none" value="${list["danjia"]}"/>
-	    				<span id="span_danjia${list["goodsid"]}">${list["danjia"]}<span>
+	    				<input id="danjia${list.goodsid}" name="goodslist[${i.index}].danjia" type="text" style="display:none" value="${list.danjia}"/>
+	    				<span id="span_danjia${list.goodsid}">${list["danjia"]}<span>
 	    			</td>	    			    			    		
     			</tr>
     		</c:forEach>    		

@@ -42,28 +42,28 @@ Goods goods = new Goods();
 			</tr>			
 			<c:forEach items="${list}" var="list" varStatus="i">
     			<tr id="tr${i.index+1}">
-    				<td style="width :40px"><input type="checkbox" id="cutomerlist[${i.index}].cutomerid" name="cutomerlist[${i.index}].cutomerid" value="${list["cutomerid"]}" /></td>
+    				<td style="width :40px"><input type="checkbox" id="cutomerlist[${i.index}].cutomerid" name="cutomerlist[${i.index}].cutomerid" value="${list.cutomerid}" /></td>
 	    			<td>
 	    				${i.index+1}
 	    			</td>
 	    			
 	    			<td>
-	    				<input id="cutomerlist[${i.index}].cutomermc" name="cutomerlist[${i.index}].cutomermc" style="display: none" value="${list["cutomermc"]}"/>
+	    				<input id="cutomerlist[${i.index}].cutomermc" name="cutomerlist[${i.index}].cutomermc" style="display: none" value="${list.cutomermc}"/>
 	    				<span id="span_cutomerlist[${i.index}].cutomermc">${list["cutomermc"]}<span>
 	    			</td>
 	    			
 	    			<td>
-	    				<input id="cutomerlist[${i.index}].kehudanwei" name="cutomerlist[${i.index}].kehudanwei" style="display: none" value="${list["kehudanwei"]}"/>
+	    				<input id="cutomerlist[${i.index}].kehudanwei" name="cutomerlist[${i.index}].kehudanwei" style="display: none" value="${list.kehudanwei}"/>
 	    				<span id="span_cutomerlist[${i.index}].kehudanwei">${list["kehudanwei"]}<span>
 	    			</td>
 	    			
 	    			<td>
-	    				<input id="cutomerlist[${i.index}].lxfs" name="cutomerlist[${i.index}].lxfs" style="display: none" value="${list["lxfs"]}"/>
+	    				<input id="cutomerlist[${i.index}].lxfs" name="cutomerlist[${i.index}].lxfs" style="display: none" value="${list.lxfs}"/>
 	    				<span id="span_cutomerlist[${i.index}].lxfs">${list["lxfs"]}<span>
 	    			</td>
 	    			
 	    			<td>
-	    				<input id="cutomerlist[${i.index}].address" name="cutomerlist[${i.index}].address" style="display: none" value="${list["address"]}"/>
+	    				<input id="cutomerlist[${i.index}].address" name="cutomerlist[${i.index}].address" style="display: none" value="${list.address}"/>
 	    				<span id="span_cutomerlist[${i.index}].address">${list["address"]}<span>
 	    			</td>	    			    			    		
     			</tr>

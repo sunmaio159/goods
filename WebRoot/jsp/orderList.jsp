@@ -48,14 +48,14 @@ Goods goods = new Goods();
 			</tr>			
 			<c:forEach items="${list}" var="list" varStatus="i">
     			<tr>
-    				<td><input type="checkbox" id="order[${i.index}].orderid" name="order[i].orderid" value="${list["orderid"]}" />	    			
+    				<td><input type="checkbox" id="order[${i.index}].orderid" name="order[i].orderid" value="${list.orderid}" />	    			
 	    			</td>
 	    			
 	    			<td>${i.index+1}	    			
 	    			</td>
 	    			
 	    			<td>
-	    				<a id="${list["orderid"]}" href="javascript:openNew('${list["orderid"]}')">${list["orderid"]}</a>	    				
+	    				<a id="${list.orderid}" href="javascript:openNew('${list.orderid}')">${list["orderid"]}</a>	    				
 	    			</td>
 	    			
 	    			<td>${list["cutomermc"]}	    				
